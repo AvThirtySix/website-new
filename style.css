@@ -42,6 +42,7 @@
   background-color: #262626;
   transition: .5s;
   text-shadow: 2px 2px 5px #000000;
+  color: #5dc1e8;
 }
 
 .footer-tab-links li a{
@@ -71,21 +72,13 @@
   border-bottom: 2px #1a1a1a solid;
 }
 
-.hero-section button{
+.cta button{
   box-shadow: 0 0 10px 2px #1a1a1a;
   text-shadow: 2px 2px 3px #000000;
 }
 
 .opleiding-section{
   background-color: #333333;
-}
-
-.card{
-  background-color: #1a1a1a;
-}
-
-.card img{
-  border-bottom: #262626 solid 2px;
 }
 
 .faq-section{
@@ -143,32 +136,44 @@ a{
 h1{
   font-weight: normal;
   font-size: 32px;
+  margin: 16px 0;
 }
 h2{
   font-weight: normal;
   font-size: 28px;
+  margin: 14px 0;
 }
 h3{
   font-weight: normal;
   font-size: 24px;
+  margin: 12px 0;
 }
 h4{
   font-weight: normal;
   font-size: 22px;
+  margin: 11px 0;
 }
 h5{
   font-weight: normal;
   font-size: 20px;
+  margin: 10px 0;
 }
 h6{
   font-weight: normal;
   font-size: 18px;
+  margin: 9px 0;
 }
 p{
   font-size: 16px;
+  margin: 8px 0;
 }
 button{
   font-size: 16px;
+}
+
+ul{
+  padding-left: 40px;
+  margin: 8px 0;
 }
 
 .brand-color-bar{
@@ -192,6 +197,40 @@ button{
   background-color:  #ababab;
   height: 12px;
   width: 33%;
+}
+
+.text-color-green{
+  color: #42b84c;
+}
+.text-color-green:hover{
+  text-shadow: 2px 2px 5px #42b84c;
+}
+
+.text-color-blue{
+  color: #5dc1e8;
+}
+.text-color-blue:hover{
+  text-shadow: 2px 2px 5px #5dc1e8;
+}
+
+.text-color-grey{
+  color: #ababab;
+}
+.text-color-grey:hover{
+  text-shadow: 2px 2px 5px #ababab;
+}
+
+.text-color-white{
+  color: #ffffff;
+}
+.text-color-white:hover{
+  text-shadow: 2px 2px 5px #ffffff;
+}
+
+.active-tab{
+  color: #42b84c;
+  background-color: #262626;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 .img-1{
@@ -433,6 +472,7 @@ button{
 .hero-section{
   display: flex;
   justify-content: space-evenly;
+  background-image: linear-gradient(#262626, #333333);
 }
 
 .hero-section-content{
@@ -456,38 +496,11 @@ button{
   margin-bottom: 16px;
 }
 
-.hero-section-content .anchor-link.landmeten1{
-  color: #42b84c;
-  text-decoration: underline;
-}
-.hero-section-content .anchor-link.landmeten1:hover{
-  text-shadow: 2px 2px 5px #42b84c;
-}
-
-.hero-section-content .anchor-link.maatvoering1{
+.horizongeodesie{
   color: #5dc1e8;
-  text-decoration: underline;
-}
-.hero-section-content .anchor-link.maatvoering1:hover{
-  text-shadow: 2px 2px 5px #5dc1e8;
 }
 
-.hero-section-content .anchor-link.opleiding1{
-  color: #ababab;
-  text-decoration: underline;
-}
-.hero-section-content .anchor-link.opleiding1:hover{
-  text-shadow: 2px 2px 5px #ababab;
-}
-.hero-section-content .anchor-link.kadaster1{
-  text-decoration: underline;
-}
-.hero-section-content .anchor-link.kadaster1:hover{
-  text-shadow: 2px 2px 5px #ffffff;
-}
-
-
-.hero-section-content a button{
+.cta button{
   font-size: 20px;
   padding: 10.5px 12px;
   margin-top: 24px;
@@ -503,19 +516,19 @@ button{
 }
 
 .cta-contact{
+  color: #ffffff !important;
   background-color: #5dc1e8;
 }
 
-.hero-section-content a button:hover{
+.cta button:hover{
   transform: scale(1.1);
 }
 
 .hero-section-content ul{
   max-width: 400px;
-  margin-top: 40px;
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
+  margin: 12px 0;
+  list-style-type: disc;
+  padding-left: 40px;
 }
 
 .slideshow-container{
@@ -577,6 +590,17 @@ button{
   justify-content: space-evenly;
   padding: 64px 0;
   border-bottom: #1a1a1a 2px solid;
+  background-image: linear-gradient(#262626, #333333);
+
+}
+
+.color-a .opleiding-section{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 64px 0;
+  border-bottom: #1a1a1a 2px solid;
+  background-color: #262626;
 }
 
 .opleiding-text-container{
@@ -591,6 +615,7 @@ button{
 
 .opleiding-section h1{
   margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .opleiding-section .p2{
@@ -606,8 +631,16 @@ button{
   align-items: center;
 }
 
+.lees-meer:hover{
+  text-shadow: 2px 2px 5px #ffffff;
+}
+
 @media screen and (max-width: 768px){
   .opleiding-section{
+    flex-direction: column-reverse;
+  }
+
+  .color-a .opleiding-section{
     flex-direction: column-reverse;
   }
 
@@ -631,9 +664,9 @@ button{
 /* #region HOME DIENSTEN SECTION */
 
 .diensten-section{
+  background-image: linear-gradient(#262626, #333333);
   text-align: center;
-  background-color: #262626;
-  border-bottom: #1a1a1a solid 2px;
+  border-bottom: #1a1a1a 2px solid;
 }
 
 .diensten-section h1{
@@ -665,8 +698,14 @@ button{
   margin-bottom: 64px;
   border-radius: 24px;
   box-shadow: 0 0 25px #000000;
-  padding-bottom: 25px;
   transition: all .5s ease-in-out; 
+}
+
+.card-text{
+  background-image: linear-gradient(#1a1a1a, #262626);
+  padding-bottom: 25px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .card:hover{
@@ -687,21 +726,21 @@ h4{
 .h4.landmeten1{
   color: #42b84c;
   text-align: center;
-  margin: 15px 30px;
+  padding: 15px 30px;
+  margin: 0;
 }
 .h4.maatvoering1{
   color: #5dc1e8;
   text-align: center;
-  margin: 15px 30px;
+  padding: 15px 30px;
+  margin: 0;
 }
-.h4.opleiding1{
+
+.h4.kadaster1{
   color: #ababab;
   text-align: center;
-  margin: 15px 30px;
-}
-.h4.kadaster1{
-  text-align: center;
-  margin: 15px 30px;
+  padding: 15px 30px;
+  margin: 0;
 }
 
 .card-p2{
@@ -715,57 +754,171 @@ h4{
 
 /* #region FAQ SECTION */
 
-.faq-section ul{
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 800px;
-  margin-bottom: 64px;
+.faq-section{
+  border-bottom: 2px solid #1a1a1a;
+  background-image: linear-gradient(#262626, #333333);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .faq-section h2{
+  color: #42b84c;
   text-align: center;
   padding-top: 64px;
+  padding-bottom: 20px;
   margin-top: 0;
 }
 
-.faq-section p{
+.faq-section *,
+.faq-section *::before,
+.faq-section *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.faq-section .accordion {
+	max-width: 800px;
+	width: 80%;
+  margin-bottom: 64px;
+}
+.faq-section details {
+	background-color: transparent;
+  box-shadow: 0px 2px #1a1a1a;
+}
+.faq-section summary:hover {
+  text-shadow: 2px 2px 5px #ffffff;
+}
+.faq-section details > summary {
+	color: #ffffff;
+  padding: 16px;
+	cursor: pointer;
+}
+.faq-section details > p {
+	padding: 16px;
+  padding-top: 0;
+	color: #ffffff;
+}
+
+/* #endregion */
+
+/* #region CTA SECTION */
+
+.cta-section{
+  background-image: linear-gradient(#262626, #333333);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 64px;
+  padding-top: 40px;
+  background-color: #262626;
+}
+
+/* for button style see hero section .cta button */
+
+/* #endregion  CTA SECTION */
+
+/* #endregion PAGECONTAINER END */
+
+/* #region OPLEIDING CONTAINER SECTION */
+
+.opleiding-page{
+  flex-grow: 1;
+}
+
+.opleiding-subjects-section{
+  background-image: linear-gradient(#262626, #333333);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.opleiding-subjects-section h2{
+  color: #42b84c;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+.opleiding-subjects-section *,
+.opleiding-subjects-section *::before,
+.opleiding-subjects-section *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.opleiding-subjects-section .accordion {
+	max-width: 800px;
+	width: 80%;
+  margin-bottom: 64px;
+  margin-top: 32px;
+}
+.opleiding-subjects-section details {
+	background-color: transparent;
+  box-shadow: 0px 2px #1a1a1a;
+}
+.opleiding-subjects-section summary:hover {
+  text-decoration: underline;
+}
+.opleiding-subjects-section details > summary {
+	color: #ffffff;
+  padding: 8px;
+	cursor: pointer;
+  font-size: 20px;
+}
+.opleiding-subjects-section details > p {
+	padding: 16px;
+  padding-top: 0;
+	color: #ffffff;
+}
+
+.opleiding-subjects-section ul{
+  padding-left: 40px;
+  margin: 8px 0;
+}
+
+.opleiding-subjects-section div{
+  padding-bottom: 8px;
+}
+
+/* #endregion OPLEIDING PAGECONTAINER END */
+
+/* #region CONTACT PAGE */
+
+.contact-info ul{
+  font-size: 20px;
+  margin-top: -6.25px !important;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info div{
   margin: 0;
 }
 
-.faq-section video{
-  width: 100%;
+.contact-info ul li a{
+  display: flex;
+  align-items: center;
+  margin: 6.25px;
+  margin-left: 0;
 }
 
-.accordion {
-  background-color: #333333;
-  cursor: pointer;
-  padding: 15px 16px;
-  margin: 4px;
-  text-shadow: 2px 2px 5px #000000;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: all .5s ease-in-out; 
+.contact-info a:hover{
+  text-shadow: 0 0 2.5px  #ffffff;
 }
 
-
-.faq-section li{
-  box-shadow: 0px 2px #1a1a1a;
+.contact-info .info-icon{
+  height: 23px;
+  width: 20px;
+  margin-right: 10px;
 }
 
-.panel{
-  padding: 16px;
-  padding-top: 0px;
-  display: none;
-  overflow: hidden;
-  margin: 0 auto;
-}
-/* #endregion */
-
-/* #endregion PAGECONTAINER END */
+/* #endregion CONTACT PAGE */
 
 /* #region FOOTER SECTION */
 .footer{
@@ -791,7 +944,7 @@ h4{
   text-shadow: 0 0 2.5px  #ffffff;
 }
 
-.info-icon{
+.footer-info .info-icon{
   margin-right: 10px;
 }
 

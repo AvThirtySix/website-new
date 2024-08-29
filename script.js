@@ -24,25 +24,38 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-/* FAQ SCRIPT */
-let acc = document.getElementsByClassName("accordion");
-let i;
+/* form script */
+function emailSend(){
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+	let userName = document.getElementById('name').value;
+	let phone = document.getElementById('phone').value;
+	let email = document.getElementById('email').value;
+
+
+	let messageBody = "Name " + userName +
+	"<br/> Phone " + phone +
+	"<br/> Email " + email;
+	Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "host@gmail.com",
+    Password : "Password",
+    To : 'reviever@gmail.com',
+    From : "website@gmail.com",
+    Subject : "This is the subject",
+    Body : messageBody
+}).then(
+  message => {
+  	if(message=='OK'){
+  		swal("Secussful", "You clicked the button!", "success");
+  	}
+  	else{
+  		swal("Error", "You clicked the button!", "error");
+  	}
+  }
+);
 }
+
 
 
 /* Footer script */
