@@ -82,7 +82,7 @@
         <div class="opleiding-page">
           <div class="opleiding-subjects-section">
             <h2>opleiding onderwerpen</h2>
-            <h3>Openinschrijving  minimaal 3 deelnemers, kosten €495 p/d</h3>
+            <h3>Openinschrijving  minimaal 3 deelnemers, kosten €495 p/d.</h3>
             <div class="accordion">
               <details>
                 <summary>Basis Landmeetkunde, 2 dagen</summary>
@@ -264,15 +264,129 @@
 
       <div class="color-a">
         <div class="sign-up-section">
-          <form action="https://formsubmit.co/abel.futbin@hotmail.com" method="post">
-            <h3>meld je aan voor onze nieuwsbrief:</h3>
-            <div class="input-name">
+          <form action="opleiding-data.php" method="get">
+            <h3>meld je aan voor onze opleiding:</h3>
+            <div class="input name" id="input-text">
               <input type="text" name="naam" id="naam" placeholder="Naam">
             </div>
-            <div class="input-email">
+            <div class="input email" id="input-text">
               <input type="email" name="email" id="email" placeholder="Email" required>
             </div>
-            <button type="submit">submit</button>
+            <ul>
+              <li>
+                <div>
+                  <input type="checkbox" name="Basis-landmeetkunde-2-dagen" id="Basis-landmeetkunde-2-dagen" value="Basis-landmeetkunde-2-dagen">
+                </div>
+                <div>
+                  <label for="Basis-landmeetkunde-2-dagen"> Basis Landmeetkunde, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Meten-met-GNSS-1-dag" id="Meten-met-GNSS-1-dag" value="Meten-met-GNSS-1-dag">
+                </div>
+                <div>
+                  <label for="Meten-met-GNSS-1-dag"> Meten met GNSS, 1 dag</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Meten-met-Total-Station-2-dagen" id="Meten-met-Total-Station-2-dagen" value="Meten-met-Total-Station-2-dagen">
+                </div>
+                <div>
+                  <label for="Meten-met-Total-Station-2-dagen"> Meten met Total Station, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Waterpassen-analoog/digitaal-1-dag" id="Waterpassen-analoog/digitaal-1-dag" value="Waterpassen-analoog/digitaal-1-dag">
+                </div>
+                <div>
+                  <label for="Waterpassen-analoog/digitaal-1-dag"> Waterpassen analoog/digitaal, 1 dag</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Maatvoering-Wegenbouw-2-dagen" id="Maatvoering-Wegenbouw-2-dagen" value="Maatvoering-Wegenbouw-2-dagen">
+                </div>
+                <div>
+                  <label for="Maatvoering-Wegenbouw-2-dagen"> Maatvoering Wegenbouw, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Maatvoering-Bouw-2-dagen" id="Maatvoering-Bouw-2-dagen" value="Maatvoering-Bouw-2-dagen">
+                </div>
+                <div>
+                  <label for="Maatvoering-Bouw-2-dagen"> Maatvoering Bouw, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Werkvoorbereiding-1-dag" id="Werkvoorbereiding-1-dag" value="Werkvoorbereiding-1-dag">
+                </div>
+                <div>
+                  <label for="Werkvoorbereiding-1-dag"> Werkvoorbereiding, 1 dag</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="HTW-conform-meten-en-1ste-faseverwerking-2-dagen" id="HTW-conform-meten-en-1ste-faseverwerking-2-dagen" value="HTW-conform-meten-en-1ste-faseverwerking-2-dagen">
+                </div>
+                <div>
+                  <label for="HTW-conform-meten-en-1ste-faseverwerking-2-dagen"> HTW conform meten en 1ste faseverwerking, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="Kadastrale-reconstructie-2-dagen" id="Kadastrale-reconstructie-2-dagen" value="Kadastrale-reconstructie-2-dagen">
+                </div>
+                <div>
+                  <label for="Kadastrale-reconstructie-2-dagen"> Kadastrale reconstructie, 2 dagen</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="" id="" value="">
+                </div>
+                <div>
+                  <label for=""> </label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="" id="" value="">
+                </div>
+                <div>
+                  <label for=""> </label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="" id="" value="">
+                </div>
+                <div>
+                  <label for=""> </label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="" id="" value="">
+                </div>
+                <div>
+                  <label for=""> </label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" name="" id="" value="">
+                </div>
+                <div>
+                  <label for=""> </label>
+                </div>
+              </li>
+            </ul>
+              <button type="submit">submit</button>
           </form>
         </div>
       </div>
@@ -328,12 +442,12 @@
           </div>
         </div>
 
-        <form action="https://formsubmit.co/abel.futbin@hotmail.com" method="post">
+        <form action="" method="post">
           <h3>meld je aan voor onze nieuwsbrief:</h3>
-          <div class="input-name">
+          <div class="input name" id="input-text">
             <input type="text" name="naam" id="naam" placeholder="Naam">
           </div>
-          <div class="input-email">
+          <div class="input email" id="input-text">
             <input type="email" name="email" id="email" placeholder="Email" required>
           </div>
           <button type="submit">submit</button>

@@ -15,21 +15,29 @@
     color: #ffffff;
   }
 
-  input{
-    border: none;
-  }
-
-  input:focus{
-    box-shadow: 0 0 5px #000000;
-    border: none;
-  }
-
   .color-a{
     background-color: #333333;
   }
   .color-b{
     background-color: #262626;
   }
+
+  .brand-color-bar{
+    background-color: #1a1a1a;
+  }
+
+  .text-color-white{
+    color: #ffffff;
+  }
+  .text-color-white:hover{
+    text-shadow: 2px 2px 5px #ffffff;
+  }
+
+  .active-tab{
+    background-color: #262626;
+    text-shadow: 2px 2px 5px #000000;
+  }
+
 /* #endregion */
 
 /* #region HEADER SECTION */
@@ -40,9 +48,7 @@
 
 .tab-link-button:hover{
   background-color: #262626;
-  transition: .5s;
   text-shadow: 2px 2px 5px #000000;
-  color: #5dc1e8;
 }
 
 .footer-tab-links li a{
@@ -68,52 +74,259 @@
 }
 
 .hero-section{
-  background-color: #262626;
+  background-image: linear-gradient(#262626, #333333);
   border-bottom: 2px #1a1a1a solid;
 }
 
-.cta button{
-  box-shadow: 0 0 10px 2px #1a1a1a;
-  text-shadow: 2px 2px 3px #000000;
+.opleiding-section{
+  background-image: linear-gradient(#262626, #333333);
+  border-bottom: #1a1a1a 2px solid;
+}
+.color-a .opleiding-section{
+  border-bottom: #1a1a1a 2px solid;
+}
+.lees-meer:hover{
+  text-shadow: 2px 2px 5px #ffffff;
 }
 
-.opleiding-section{
-  background-color: #333333;
+.diensten-section{
+  background-image: linear-gradient(#262626, #333333);
+  border-bottom: #1a1a1a 2px solid;
 }
+.card-text{
+  background-image: linear-gradient(#1a1a1a, #262626);
+}
+
 
 .faq-section{
-  background-color: #333333;
+  background-image: linear-gradient(#262626, #333333);
+  border-bottom: 2px solid #1a1a1a;
+}
+.faq-section details {
+  box-shadow: 0px 2px #1a1a1a;
+}
+.faq-section summary:hover {
+  text-shadow: 2px 2px 5px #ffffff;
+}
+
+.cta-section{
+  background-image: linear-gradient(#262626, #333333);
+  background-color: #262626;
 }
 /* #endregion */
+
+/* #region OPLEIDING CONTAINER SECTION */
+
+.opleiding-subjects-section{
+  background-image: linear-gradient(#262626, #333333);
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.opleiding-subjects-section details {
+  box-shadow: 0px 2px #1a1a1a;
+}
+
+.sign-up-section{
+  background-image: linear-gradient(#262626, #333333);
+}
+
+/* #endregion OPLEIDING CONTAINER SECTION */
+
+/* #region CONTACT PAGE */
+
+.contact-info a:hover{
+  text-shadow: 0 0 2.5px  #ffffff;
+}
+
+/* #endregion CONTACT PAGE */
+
 
 /* #region FOOTER SECTION */
 .footer{
   background-color: #1a1a1a;
 }
-form button{
-  background-color: #333333;
+
+.fa-brands{
   color: #ffffff;
 }
+
+.footer-info a:hover{
+  text-shadow: 0 0 2.5px  #ffffff;
+}
+
+.volg-ons button{
+  background-color: #1a1a1a;
+}
+
+
 /* #endregion */
 }
 
 @media (prefers-color-scheme: light) {
+
+  /* #region BODY CONTAINER*/
+
+  body{
+    color: #1a1a1a;
+    text-shadow: none;
+  }
+  
+  a{
+    color: #1a1a1a;
+  }
+
+  button{
+    color: #1a1a1a;
+  }
+
+  .color-a{
+    background-color: #ffffff;
+  }
+  .color-b{
+    background-color: #e6e6e6;
+  }
+
+  .brand-color-bar{
+    background-color: #cccccc;
+  }
+
+  .text-color-white{
+    color: #1a1a1a;
+  }
+  .text-color-white:hover{
+    text-shadow: 2px 2px 5px #1a1a1a;
+  }
+
+  .active-tab{
+    background-color: #e6e6e6;
+  }
+
+/* #endregion */
+
 /* #region HEADER SECTION */
 
+.tab-link-button{
+  background-color: #cccccc;
+}
 
-/* #region PAGECONTAINER SECTION */
-
-.card{
+.tab-link-button:hover{
   background-color: #e6e6e6;
 }
 
-.card img{
-  border-bottom: #f2f2f2 solid 2px;
+.footer-tab-links li a{
+  background-color: #e6e6e6;
+}
+
+.header{
+  background-color: #cccccc;
+}
+
+.tab.responsive{
+  background-color: #cccccc;
+}
+
+.icon{
+  background-color: #cccccc;
+}
+/* #endregion */
+
+/* #region PAGECONTAINER SECTION */
+.page-container{
+  background-color: #ffffff;
+}
+
+.hero-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  border-bottom: 2px #cccccc solid;
+}
+
+.opleiding-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  border-bottom: #cccccc  2px solid;
+}
+.color-a .opleiding-section{
+  border-bottom: #cccccc  2px solid;
+}
+.lees-meer:hover{
+  text-shadow: 2px 2px 5px #1a1a1a;
+}
+
+.diensten-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  border-bottom: #cccccc  2px solid;
+}
+.card-text{
+  background-image: linear-gradient(#cccccc, #e6e6e6);
 }
 
 
-/* #region FOOTER SECTION */
+.faq-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  border-bottom: 2px solid #cccccc;
+}
+.faq-section details {
+  box-shadow: 0px 2px #cccccc;
+}
+.faq-section summary:hover {
+  text-shadow: 2px 2px 5px #1a1a1a;
+}
 
+.cta-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  background-color: #e6e6e6;
+}
+/* #endregion */
+
+/* #region OPLEIDING CONTAINER SECTION */
+
+.opleiding-subjects-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+  border-bottom: 2px solid #cccccc;
+}
+
+.opleiding-subjects-section details {
+  box-shadow: 0px 2px #cccccc;
+}
+
+.sign-up-section{
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+}
+
+/* #endregion OPLEIDING CONTAINER SECTION */
+
+/* #region CONTACT PAGE */
+
+.contact-info a:hover{
+  text-shadow: 0 0 2.5px  #1a1a1a;
+}
+
+
+
+/* #endregion CONTACT PAGE */
+
+
+/* #region FOOTER SECTION */
+.footer{
+  background-color: #cccccc;
+}
+form button{
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.footer-info a:hover{
+  text-shadow: 0 0 2.5px  #1a1a1a;
+}
+
+.volg-ons button{
+  background-color: #cccccc;
+}
+
+.fa-brands{
+  color: #1a1a1a;
+  text-shadow: none;
+}
+
+/* #endregion */
 }
 
 /* #region BODY SECTION */
@@ -179,8 +392,6 @@ ul{
 .brand-color-bar{
   display: flex;
   height: 12px;
-  background-color: #1a1a1a;
-  box-shadow: inset 0 0 5px #000000;
 }
 .color-1{
   background-color:  #42b84c;
@@ -220,17 +431,8 @@ ul{
   text-shadow: 2px 2px 5px #ababab;
 }
 
-.text-color-white{
-  color: #ffffff;
-}
-.text-color-white:hover{
-  text-shadow: 2px 2px 5px #ffffff;
-}
-
 .active-tab{
   color: #42b84c;
-  background-color: #262626;
-  text-shadow: 2px 2px 5px #000000;
 }
 
 .img-1{
@@ -330,7 +532,7 @@ ul{
 
 .tab-links{
   height: 32px;
-  margin-right: 17px;
+  margin: 0 17px;
 }
 
 .icon{
@@ -350,16 +552,20 @@ ul{
 
 .tab-link-button:hover{
   transform: scale(1.1); 
+  transition: .5s;
+  color: #5dc1e8;
 }
 
- @media screen and (max-width: 667px){
+ @media screen and (max-width: 684px){
   .tab{
     margin-bottom: 16px;
     margin-top: -7px;
   }
+}
 
+@media screen and (max-width: 650px){
   .tab-links{
-    margin-right: 0;
+    margin: 0;
   }
 }
 
@@ -472,7 +678,6 @@ ul{
 .hero-section{
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(#262626, #333333);
 }
 
 .hero-section-content{
@@ -498,9 +703,11 @@ ul{
 
 .horizongeodesie{
   color: #5dc1e8;
+
 }
 
 .cta button{
+  color: #ffffff;
   font-size: 20px;
   padding: 10.5px 12px;
   margin-top: 24px;
@@ -509,6 +716,8 @@ ul{
   text-decoration: none;
   border: none;
   transition: all .5s ease-in-out;
+  box-shadow: 0 0 10px 2px #1a1a1a;
+  text-shadow: 2px 2px 3px #000000;
 }
 
 .cta-opleiding{
@@ -589,9 +798,6 @@ ul{
   display: flex;
   justify-content: space-evenly;
   padding: 64px 0;
-  border-bottom: #1a1a1a 2px solid;
-  background-image: linear-gradient(#262626, #333333);
-
 }
 
 .color-a .opleiding-section{
@@ -599,8 +805,6 @@ ul{
   flex-direction: row-reverse;
   justify-content: space-evenly;
   padding: 64px 0;
-  border-bottom: #1a1a1a 2px solid;
-  background-color: #262626;
 }
 
 .opleiding-text-container{
@@ -608,7 +812,7 @@ ul{
 }
 
 .opleiding-text{
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   margin: auto;
 }
@@ -629,10 +833,6 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.lees-meer:hover{
-  text-shadow: 2px 2px 5px #ffffff;
 }
 
 @media screen and (max-width: 768px){
@@ -664,9 +864,7 @@ ul{
 /* #region HOME DIENSTEN SECTION */
 
 .diensten-section{
-  background-image: linear-gradient(#262626, #333333);
   text-align: center;
-  border-bottom: #1a1a1a 2px solid;
 }
 
 .diensten-section h1{
@@ -702,7 +900,6 @@ ul{
 }
 
 .card-text{
-  background-image: linear-gradient(#1a1a1a, #262626);
   padding-bottom: 25px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -755,8 +952,6 @@ h4{
 /* #region FAQ SECTION */
 
 .faq-section{
-  border-bottom: 2px solid #1a1a1a;
-  background-image: linear-gradient(#262626, #333333);
   display: flex;
 	justify-content: center;
 	align-items: center;
@@ -786,20 +981,14 @@ h4{
 }
 .faq-section details {
 	background-color: transparent;
-  box-shadow: 0px 2px #1a1a1a;
-}
-.faq-section summary:hover {
-  text-shadow: 2px 2px 5px #ffffff;
 }
 .faq-section details > summary {
-	color: #ffffff;
   padding: 16px;
 	cursor: pointer;
 }
 .faq-section details > p {
 	padding: 16px;
   padding-top: 0;
-	color: #ffffff;
 }
 
 /* #endregion */
@@ -807,13 +996,11 @@ h4{
 /* #region CTA SECTION */
 
 .cta-section{
-  background-image: linear-gradient(#262626, #333333);
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-bottom: 64px;
   padding-top: 40px;
-  background-color: #262626;
 }
 
 /* for button style see hero section .cta button */
@@ -829,7 +1016,6 @@ h4{
 }
 
 .opleiding-subjects-section{
-  background-image: linear-gradient(#262626, #333333);
   display: flex;
 	justify-content: center;
 	align-items: center;
@@ -842,6 +1028,12 @@ h4{
   padding-top: 64px;
   padding-bottom: 20px;
   margin-top: 0;
+  width: 80%;
+}
+
+.opleiding-subjects-section h3{
+  text-align: center;
+  width: 80%;
 }
 
 .opleiding-subjects-section *,
@@ -860,13 +1052,11 @@ h4{
 }
 .opleiding-subjects-section details {
 	background-color: transparent;
-  box-shadow: 0px 2px #1a1a1a;
 }
 .opleiding-subjects-section summary:hover {
   text-decoration: underline;
 }
 .opleiding-subjects-section details > summary {
-	color: #ffffff;
   padding: 8px;
 	cursor: pointer;
   font-size: 20px;
@@ -874,7 +1064,6 @@ h4{
 .opleiding-subjects-section details > p {
 	padding: 16px;
   padding-top: 0;
-	color: #ffffff;
 }
 
 .opleiding-subjects-section ul{
@@ -886,12 +1075,38 @@ h4{
   padding-bottom: 8px;
 }
 
+.sign-up-section{
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-section form{
+  margin: 0;
+  padding: 64px 0;
+}
+
+.sign-up-section ul{
+  list-style-type: none;
+  padding-left: 12px;
+  margin-top: -22.5px;
+}
+
+.sign-up-section li{
+  display: flex;
+  margin: 10px 0;
+}
+
+.sign-up-section li input{
+  margin: 0;
+  margin-right: 5px;
+}
+
 /* #endregion OPLEIDING PAGECONTAINER END */
 
 /* #region CONTACT PAGE */
 
 .contact-info ul{
-  font-size: 20px;
+  font-size: 22px;
   margin-top: -6.25px !important;
   list-style-type: none;
   padding-left: 0;
@@ -906,10 +1121,6 @@ h4{
   align-items: center;
   margin: 6.25px;
   margin-left: 0;
-}
-
-.contact-info a:hover{
-  text-shadow: 0 0 2.5px  #ffffff;
 }
 
 .contact-info .info-icon{
@@ -940,10 +1151,6 @@ h4{
   margin-top: -6.25px !important;
 }
 
-.footer-info a:hover{
-  text-shadow: 0 0 2.5px  #ffffff;
-}
-
 .footer-info .info-icon{
   margin-right: 10px;
 }
@@ -963,7 +1170,6 @@ h4{
 }
 
 .volg-ons button{
-  background-color: #1a1a1a;
   border: none;
   font-size: 32px;
   transition: all .5s ease-in-out; 
@@ -980,7 +1186,7 @@ h4{
   margin: 25px;
 }
 
-input{
+.input input{
   padding: 7px 12px;
   width: 197px;
   border-radius: 16px;
@@ -989,11 +1195,20 @@ input{
   transition: all .5s ease-in-out; 
 }
 
-input:hover{
-  transform: scale(1.1); 
+input{
+  border: none;
 }
 
 input:focus{
+  box-shadow: 0 0 5px #000000;
+  border: none;
+}
+
+.volg-ons input:hover{
+  transform: scale(1.1); 
+}
+
+.volg-ons input:focus{
   transform: scale(1.1);
 }
 
@@ -1006,13 +1221,14 @@ form{
   max-width: 221px;
 }
 
-form div{
+#input-text{
   border-radius: 16px;
   margin-bottom: 25px;
   box-shadow: 0 0 5px #000000;
 }
 
 form button{
+  background-color: #42b84c;
   font-size: 16px;
   padding: 7.5px 8px;
   border-radius: 16px;
@@ -1040,7 +1256,8 @@ form button:hover{
 
 .copyright{
   text-align: center;
-  margin: 25px;
+  padding: 25px;
+  margin: 0;
 }
 
 @media screen and (max-width: 328px) {
