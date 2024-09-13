@@ -74,7 +74,7 @@
 }
 
 .hero-section{
-  background-image: linear-gradient(#262626, #333333);
+  background-color: #1a1a1a;
   border-bottom: 2px #1a1a1a solid;
 }
 
@@ -86,7 +86,7 @@
   border-bottom: #1a1a1a 2px solid;
 }
 .lees-meer:hover{
-  text-shadow: 2px 2px 5px #ffffff;
+  text-shadow: 0 0 2.5px #ffffff;
 }
 
 .diensten-section{
@@ -194,7 +194,7 @@
     color: #1a1a1a;
   }
   .text-color-white:hover{
-    text-shadow: 2px 2px 5px #1a1a1a;
+    text-shadow: 0 0 2.5px #1a1a1a;
   }
 
   .active-tab{
@@ -248,7 +248,7 @@
   border-bottom: #cccccc  2px solid;
 }
 .lees-meer:hover{
-  text-shadow: 2px 2px 5px #1a1a1a;
+  text-shadow: 0 0 2.5px #1a1a1a;
 }
 
 .diensten-section{
@@ -339,49 +339,51 @@ body{
   width: 100%;
   height: 100vh;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: dm-sans;
+  src: url(fonts/DM_Sans/static/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: tw-cen-mt;
+  src: url(fonts/tw-cen-mt.ttf);
+}
+
+h1{
+  font-family: dm-sans;
+}
+h2{
+  font-family: dm-sans;
+}
+h3{
+  font-family: dm-sans;
+}
+h4{
+  font-family: dm-sans;
+}
+h5{
+  font-family: dm-sans;
+}
+h6{
+  font-family: dm-sans;
+}
+
+p{
+  font-family: poppins;
+}
+
+button{
+  font-family: tw-cen-mt;
 }
 
 a{
   text-decoration: underline;
   width: auto;
-}
-h1{
-  font-weight: normal;
-  font-size: 32px;
-  margin: 16px 0;
-}
-h2{
-  font-weight: normal;
-  font-size: 28px;
-  margin: 14px 0;
-}
-h3{
-  font-weight: normal;
-  font-size: 24px;
-  margin: 12px 0;
-}
-h4{
-  font-weight: normal;
-  font-size: 22px;
-  margin: 11px 0;
-}
-h5{
-  font-weight: normal;
-  font-size: 20px;
-  margin: 10px 0;
-}
-h6{
-  font-weight: normal;
-  font-size: 18px;
-  margin: 9px 0;
-}
-p{
-  font-size: 16px;
-  margin: 8px 0;
-}
-button{
-  font-size: 16px;
 }
 
 ul{
@@ -414,21 +416,21 @@ ul{
   color: #42b84c;
 }
 .text-color-green:hover{
-  text-shadow: 2px 2px 5px #42b84c;
+  text-shadow: 0 0 2.5px #42b84c;
 }
 
 .text-color-blue{
   color: #5dc1e8;
 }
 .text-color-blue:hover{
-  text-shadow: 2px 2px 5px #5dc1e8;
+  text-shadow: 0 0 2.5px #5dc1e8;
 }
 
 .text-color-grey{
   color: #ababab;
 }
 .text-color-grey:hover{
-  text-shadow: 2px 2px 5px #ababab;
+  text-shadow: 0 0 2.5px #ababab;
 }
 
 .active-tab{
@@ -437,7 +439,7 @@ ul{
 
 .img-1{
   width: 100%;
-  height: 570px;
+  height: 700px;
   background-image: url('images/new-images/IMG-20240521-WA0000.jpg');
   background-size: cover;
   background-position: center center;
@@ -447,7 +449,7 @@ ul{
 }
 .img-2{
   width: 100%;
-  height: 570px;
+  height: 700px;
   background-image: url('images/new-images/IMG-20240521-WA0001.jpg');
   background-size: cover;
   background-position: center center;
@@ -457,7 +459,7 @@ ul{
 }
 .img-3{
   width: 100%;
-  height: 570px;
+  height: 700px;
   background-image: url('images/new-images/IMG-20240521-WA0002.jpg');
   background-size: cover;
   background-position: center center;
@@ -556,7 +558,7 @@ ul{
   color: #5dc1e8;
 }
 
- @media screen and (max-width: 684px){
+ @media screen and (max-width: 595px){
   .tab{
     margin-bottom: 16px;
     margin-top: -7px;
@@ -595,6 +597,7 @@ ul{
   }
 
   .icon{
+    margin-top: 0px;
     display: block;
     font-size: 28px;
   }
@@ -658,7 +661,7 @@ ul{
   }
 
   .icon{
-    padding: 6.25px 16px 8px;
+    padding: 8px 16px 5px;
     width: 24.5px;
   }
 
@@ -699,6 +702,9 @@ ul{
 .hero-section-content h4{
   max-width: 500px;
   margin-bottom: 16px;
+  font-size: 20px;
+  font-family: poppins;
+  line-height: 25px;
 }
 
 .horizongeodesie{
@@ -771,7 +777,7 @@ ul{
 
 @media screen and (max-width: 768px){
   .hero-section{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .img-1{
@@ -797,7 +803,7 @@ ul{
 .opleiding-section{
   display: flex;
   justify-content: space-evenly;
-  padding: 64px 0;
+
 }
 
 .color-a .opleiding-section{
@@ -837,7 +843,7 @@ ul{
 
 @media screen and (max-width: 768px){
   .opleiding-section{
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .color-a .opleiding-section{
@@ -852,7 +858,6 @@ ul{
   .img-opleiding-container{
     width: 100%;
     margin: auto;
-    margin-top: 50px;
   }
   .img-4{
     width: 100%;
