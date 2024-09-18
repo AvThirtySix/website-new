@@ -30,7 +30,7 @@
     color: #ffffff;
   }
   .text-color-white:hover{
-    text-shadow: 2px 2px 5px #ffffff;
+    text-shadow: 0px 0px 2.5px #ffffff;
   }
 
   .active-tab{
@@ -106,7 +106,7 @@
   box-shadow: 0px 2px #1a1a1a;
 }
 .faq-section summary:hover {
-  text-shadow: 2px 2px 5px #ffffff;
+  text-shadow: 0 0 2.5px #ffffff;
 }
 
 .cta-section{
@@ -382,6 +382,7 @@ button{
 }
 
 a{
+  font-family: dm-sans;
   text-decoration: underline;
   width: auto;
 }
@@ -391,6 +392,9 @@ ul{
   margin: 8px 0;
 }
 
+li{
+  font-family: poppins;
+}
 .brand-color-bar{
   display: flex;
   height: 12px;
@@ -418,6 +422,9 @@ ul{
 .text-color-green:hover{
   text-shadow: 0 0 2.5px #42b84c;
 }
+.text-color-green-nh{
+  color: #42b84c;
+}
 
 .text-color-blue{
   color: #5dc1e8;
@@ -425,12 +432,18 @@ ul{
 .text-color-blue:hover{
   text-shadow: 0 0 2.5px #5dc1e8;
 }
+.text-color-blue-nh{
+  color: #5dc1e8;
+}
 
 .text-color-grey{
   color: #ababab;
 }
 .text-color-grey:hover{
   text-shadow: 0 0 2.5px #ababab;
+}
+.text-color-grey-nh{
+  color: #ababab;
 }
 
 .active-tab{
@@ -548,7 +561,7 @@ ul{
   transition: all .5s ease-in-out; 
   border: none;
   font-size: 18px;
-  padding: 7.5px 9px;
+  padding: 8.5px 9.5px;
   border-radius: 18px;
 }
 
@@ -781,13 +794,13 @@ ul{
   }
 
   .img-1{
-    height: 500px;
+    height: 66vw;
   }
   .img-2{
-    height: 500px;
+    height: 66vw;
   }
   .img-3{
-    height: 500px;
+    height: 66vw;
   }
 
   .opleiding-section{
@@ -803,7 +816,7 @@ ul{
 .opleiding-section{
   display: flex;
   justify-content: space-evenly;
-
+  padding: 64px 0;
 }
 
 .color-a .opleiding-section{
@@ -832,6 +845,10 @@ ul{
   margin-bottom: 0;
 }
 
+.p-20px{
+  font-size: 20px;
+}
+
 .img-opleiding-container{
   margin: auto;
   z-index: 1;
@@ -839,15 +856,22 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+
+.lees-meer{
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 768px){
   .opleiding-section{
     flex-direction: column;
+    padding: 0;
   }
 
   .color-a .opleiding-section{
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 0;
   }
 
   .opleiding-text-container{
@@ -858,9 +882,11 @@ ul{
   .img-opleiding-container{
     width: 100%;
     margin: auto;
+    height: 66vw;
   }
   .img-4{
-    width: 100%;
+    width: 80%;
+    height: 80%;
   }
 }
 
@@ -918,11 +944,6 @@ ul{
 .card img{
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-}
-
-h4{
-  font-size: 24px;
-  font-weight: normal;
 }
 
 .h4.landmeten1{
@@ -987,6 +1008,11 @@ h4{
 .faq-section details {
 	background-color: transparent;
 }
+
+.faq-details{
+  font-family: dm-sans;
+}
+
 .faq-section details > summary {
   padding: 16px;
 	cursor: pointer;
@@ -1013,6 +1039,63 @@ h4{
 /* #endregion  CTA SECTION */
 
 /* #endregion PAGECONTAINER END */
+
+/* #region DIENSTEN CONTAINER SECTION */
+
+.img-1-diensten{
+  width: 100%;
+  height: 550px;
+  background-image: url('images/new-images/IMG-20240521-WA0000.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 100px #000000;
+}
+.img-2-diensten{
+  width: 100%;
+  height: 550px;
+  background-image: url('images/new-images/IMG-20240521-WA0001.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 100px #000000;
+}
+.img-3-diensten{
+  width: 100%;
+  height: 550px;
+  background-image: url('images/new-images/IMG-20240521-WA0002.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 100px #000000;
+}
+
+@media screen and (max-width: 768px){
+  .diensten-page-container h1{
+    margin-top: 0;
+  }
+
+  .diensten-page-container .opleiding-text{
+    margin-bottom: 64px;
+  }
+
+  .img-1-diensten{
+    height: 66vw;
+  }
+  .img-2-diensten{
+    height: 66vw;
+  }
+  .img-3-diensten{
+    height: 66vw;
+  }
+}
+
+
+
+/* #endregion DIENSTEN CONTAINER SECTION */
 
 /* #region OPLEIDING CONTAINER SECTION */
 
@@ -1239,7 +1322,7 @@ form button{
   border-radius: 16px;
   border: none;
   transition: all .5s ease-in-out; 
-  text-shadow: 2px 2px 5px #000000;
+  text-shadow: 2px 2px 3px #000000;
   box-shadow: 0 0 5px #000000;
 }
 
