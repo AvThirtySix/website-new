@@ -206,7 +206,7 @@
 /* #region HEADER SECTION */
 
 .tab-link-button{
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .tab-link-button:hover{
@@ -218,7 +218,7 @@
 }
 
 .header{
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .tab.responsive{
@@ -236,7 +236,7 @@
 }
 
 .hero-section{
-  background-image: linear-gradient(#e6e6e6, #ffffff);
+  background-color: #ffffff;
   border-bottom: 2px #cccccc solid;
 }
 
@@ -256,9 +256,11 @@
   border-bottom: #cccccc  2px solid;
 }
 .card-text{
-  background-image: linear-gradient(#cccccc, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
 }
-
+.card{
+  background-color: #cccccc;
+}
 
 .faq-section{
   background-image: linear-gradient(#e6e6e6, #ffffff);
@@ -268,7 +270,7 @@
   box-shadow: 0px 2px #cccccc;
 }
 .faq-section summary:hover {
-  text-shadow: 2px 2px 5px #1a1a1a;
+  text-shadow: 0 0 2.5px #1a1a1a;
 }
 
 .cta-section{
@@ -307,7 +309,7 @@
 
 /* #region FOOTER SECTION */
 .footer{
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 form button{
   background-color: #ffffff;
@@ -318,7 +320,7 @@ form button{
 }
 
 .volg-ons button{
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .fa-brands{
@@ -395,6 +397,15 @@ ul{
 li{
   font-family: poppins;
 }
+
+.brand-color-bar.phone{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .brand-color-bar.phone{
+    display: flex;
+  }
+}
 .brand-color-bar{
   display: flex;
   height: 12px;
@@ -450,48 +461,6 @@ li{
   color: #42b84c;
 }
 
-.img-1{
-  width: 100%;
-  height: 700px;
-  background-image: url('images/new-images/IMG-20240521-WA0000.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  margin: auto;
-  box-shadow: inset 0 0 100px #000000;
-}
-.img-2{
-  width: 100%;
-  height: 700px;
-  background-image: url('images/new-images/IMG-20240521-WA0001.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  margin: auto;
-  box-shadow: inset 0 0 100px #000000;
-}
-.img-3{
-  width: 100%;
-  height: 700px;
-  background-image: url('images/new-images/IMG-20240521-WA0002.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  margin: auto;
-  box-shadow: inset 0 0 100px #000000;
-}
-
-
-.img-4{
-  width: 80%;
-  height: 500px;
-  background-image: url('images/new-images/IMG-20240521-WA0003.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  margin: auto;
-  box-shadow: inset 0 0 100px #000000;
-}
 .img-5{
   width: 100%;
   height: 649px;
@@ -768,6 +737,26 @@ li{
   align-items: center;
 }
 
+.img-style{
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 100px #000000;
+}
+
+.img-1-slideshow{
+  background-image: url('images/new-images/totalstation.png');
+}
+.img-2-slideshow{
+  background-image: url('images/new-images/waterpassen.jpg');
+}
+.img-3-slideshow{
+  background-image: url('images/new-images/spiegeltje-en-tsc5.png');
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -793,13 +782,13 @@ li{
     flex-direction: column-reverse;
   }
 
-  .img-1{
+  .img-1-slideshow{
     height: 66vw;
   }
-  .img-2{
+  .img-2-slideshow{
     height: 66vw;
   }
-  .img-3{
+  .img-3-slideshow{
     height: 66vw;
   }
 
@@ -817,6 +806,17 @@ li{
   display: flex;
   justify-content: space-evenly;
   padding: 64px 0;
+}
+
+.img-opleiding{
+  width: 80%;
+  height: 500px;
+  background-image: url('images/new-images/TSC5.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 100px #000000;
 }
 
 .color-a .opleiding-section{
@@ -884,7 +884,7 @@ li{
     margin: auto;
     height: 66vw;
   }
-  .img-4{
+  .img-opleiding{
     width: 80%;
     height: 80%;
   }
@@ -973,6 +973,34 @@ li{
   text-align: left;
 }
 
+.img-diensten-container{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  width: 284px;
+  height: 189.3px;
+}
+
+.img-card{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin: auto;
+}
+
+.img-diensten-cards-1{
+  background-image: url('images/new-images/totalstation.png');
+}
+.img-diensten-cards-2{
+  background-image: url('images/new-images/spiegeltje-potlood-en-haak.png');
+}
+.img-diensten-cards-3{
+  background-image: url('images/new-images/waterpassen.jpg');
+}
+
 /* #endregion */
 
 /* #region FAQ SECTION */
@@ -1042,35 +1070,34 @@ li{
 
 /* #region DIENSTEN CONTAINER SECTION */
 
-.img-1-diensten{
+.img-style-diensten{
   width: 100%;
   height: 550px;
-  background-image: url('images/new-images/IMG-20240521-WA0000.jpg');
   background-size: cover;
   background-position: center center;
   display: block;
   margin: auto;
   box-shadow: inset 0 0 100px #000000;
 }
-.img-2-diensten{
-  width: 100%;
-  height: 550px;
-  background-image: url('images/new-images/IMG-20240521-WA0001.jpg');
+
+.img-diensten-style{
+  width: 80%;
+  height: 400px;
   background-size: cover;
   background-position: center center;
   display: block;
   margin: auto;
   box-shadow: inset 0 0 100px #000000;
 }
-.img-3-diensten{
-  width: 100%;
-  height: 550px;
-  background-image: url('images/new-images/IMG-20240521-WA0002.jpg');
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  margin: auto;
-  box-shadow: inset 0 0 100px #000000;
+
+.img-diensten-landmeten{
+  background-image: url(images/new-images/totalstation.png);
+}
+.img-diensten-maatvoering{
+  background-image: url(images/new-images/spiegeltje-potlood-en-haak.png);
+}
+.img-diensten-kadaster{
+  background-image: url(images/new-images/waterpassen.jpg);
 }
 
 @media screen and (max-width: 768px){
@@ -1082,13 +1109,13 @@ li{
     margin-bottom: 64px;
   }
 
-  .img-1-diensten{
-    height: 66vw;
+
+  .img-diensten-style{
+    width: 80%;
+    height: 80%;
   }
-  .img-2-diensten{
-    height: 66vw;
-  }
-  .img-3-diensten{
+
+  .img-style-diensten{
     height: 66vw;
   }
 }
@@ -1110,7 +1137,7 @@ li{
 	flex-direction: column;
 }
 
-.opleiding-subjects-section h2{
+.opleiding-subjects-section h1{
   color: #42b84c;
   text-align: center;
   padding-top: 64px;
@@ -1119,7 +1146,7 @@ li{
   width: 80%;
 }
 
-.opleiding-subjects-section h3{
+.opleiding-subjects-section h2{
   text-align: center;
   width: 80%;
 }
@@ -1130,6 +1157,11 @@ li{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+.opleiding-subjects{
+  font-family: dm-sans;
+  font-size: 18px;
 }
 
 .opleiding-subjects-section .accordion {
@@ -1145,11 +1177,11 @@ li{
   text-decoration: underline;
 }
 .opleiding-subjects-section details > summary {
-  padding: 8px;
+  padding: 12px;
 	cursor: pointer;
   font-size: 20px;
 }
-.opleiding-subjects-section details > p {
+.opleiding-subjects-section details > div {
 	padding: 16px;
   padding-top: 0;
 }
@@ -1323,7 +1355,7 @@ form button{
   border: none;
   transition: all .5s ease-in-out; 
   text-shadow: 2px 2px 3px #000000;
-  box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 10px 2px #000000;
 }
 
 form button:hover{
