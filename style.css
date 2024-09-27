@@ -2,6 +2,10 @@
 
   /* #region BODY CONTAINER*/
 
+  .light-theme{
+    display: none;
+  }
+
   body{
     color: #ffffff;
     text-shadow: 2px 2px 5px #000000;
@@ -143,7 +147,7 @@
 /* #region PRIVACY PAGE */
 
 .privacy-page{
-  background-color: #262626;
+  background-image: linear-gradient(#262626, #333333);
 }
 
 .privacy-page a:hover{
@@ -176,6 +180,10 @@
 @media (prefers-color-scheme: light) {
 
   /* #region BODY CONTAINER*/
+
+  .dark-theme{
+    display: none;
+  }
 
   body{
     color: #1a1a1a;
@@ -320,7 +328,7 @@
 /* #region PRIVACY PAGE */
 
 .privacy-page{
-  background-color: #e6e6e6;
+  background-image: linear-gradient(#e6e6e6, #ffffff);
 }
 
 .privacy-page a:hover{
@@ -423,11 +431,6 @@ li{
 .brand-color-bar.phone{
   display: none;
 }
-@media screen and (max-width: 768px){
-  .brand-color-bar.phone{
-    display: flex;
-  }
-}
 .brand-color-bar{
   display: flex;
   height: 12px;
@@ -521,15 +524,51 @@ li{
 }
 
 .logo-img{
-  margin: 25px;
   transition: all .5s ease-in-out; 
-  border-radius: 50px;
-  box-shadow: 0 0 5px #000000;
+}
+
+.logo-div{
+  position: relative;
+  height: auto;
+  margin: 25px 0;
+}
+.logo-link{
+  margin-bottom: 100px;
+}
+
+.logo-buttons{
+  position: absolute;
+  right: 0;
+  bottom: 10.5%;
+  z-index: 2;
+  background-color: #ff000050;
+  height: 26%;
+  width: 65.09433962%;
+}
+
+.logo-buttons button{
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.landmeten-logo-button{
+  width: 31.5942029%;
+  background-color: #ffff0050;
+}
+.maatvoering-logo-button{
+  width: 38.84057971%;
+  background-color: #ff005050;
+}
+.opleiding-logo-button{
+  width: 29.56521739%;
+  background-color: #ffff0050;
 }
 
 
 .logo-img:hover { 
-  transform: scale(1.1); 
+  
 }
 
 .tab{
@@ -562,10 +601,27 @@ li{
   color: #5dc1e8;
 }
 
- @media screen and (max-width: 595px){
+ @media screen and (max-width: 913px){
   .tab{
-    margin-bottom: 16px;
-    margin-top: -7px;
+    margin-bottom: 25px;
+    margin-top: -16px;
+  }
+
+  .logo{
+    width: 95%;
+    max-width: 530px; 
+    height: auto;
+  }
+  .logo-div{
+    width: 100%;
+    height: auto;
+  }
+  .logo-img{
+    width: 100%;
+    height: auto !important;
+  }
+  .brand-color-bar.phone{
+    display: flex;
   }
 }
 
@@ -575,9 +631,15 @@ li{
   }
 }
 
+@media screen and (max-width: 530px){
+  .logo-div{
+    margin: 4.716981132vw 0;
+  }
+}
+
 @media screen and (max-width: 416px){
   .header{
-    height: 150px;
+    height: 27.88461538vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -596,7 +658,6 @@ li{
     text-align: right;
     z-index: 2;
     width: 101.953px;
-    margin-top: 61px;
     padding: 0 25px 6.25px;
   }
 
@@ -652,6 +713,7 @@ li{
 
   .tab.responsive{
     margin: 0;
+    margin-top: -5px;
     width: 134px;
     padding: 0 0 6.25px;
     height: 190px;
@@ -660,7 +722,7 @@ li{
   .tab{
     align-self: flex-end;
     width: auto;
-    margin-top: 0;
+    margin-top: -5px;
     padding: 0;
   }
 
@@ -879,10 +941,6 @@ li{
   justify-content: center;
   align-items: center;
   height: auto;
-}
-
-.lees-meer{
-  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 768px){
@@ -1334,6 +1392,35 @@ li{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.footer-logo{
+  height: 100px;
+}
+@media screen and (max-width: 913px){
+
+  .footer-logo{
+    width: 95%;
+    max-width: 530px; 
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 319px){
+  .footer-info ul{
+    margin: -6.25px 0 0 0 !important;
+  }
+
+  .footer-info{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer h3{
