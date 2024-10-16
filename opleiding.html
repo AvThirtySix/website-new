@@ -278,7 +278,8 @@
 
       <div class="color-a" id="aanmelden-opleiding">
         <div class="sign-up-section">
-          <form action="opleiding-data.php" method="get">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e2ef14ba-85bf-4563-8008-cfdee05546b2">
             <h2>meld je aan voor onze opleiding:</h2>
             <div class="input name" id="input-text">
               <input type="text" name="naam" id="naam" placeholder="Naam">
@@ -400,6 +401,7 @@
                 </div>
               </li>
             </ul>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
               <div class="submit-button">
                 <button type="submit">SUBMIT</button>
               </div>
@@ -466,7 +468,8 @@
           </div>
         </div>
 
-        <form class="email-form" action="" method="post">
+        <form class="email-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e2ef14ba-85bf-4563-8008-cfdee05546b2">
           <h3>meld je aan voor onze nieuwsbrief:</h3>
           <div class="input name" id="input-text">
             <input type="text" name="naam" id="naam" placeholder="Naam">
@@ -474,6 +477,7 @@
           <div class="input email" id="input-text">
             <input type="email" name="email" id="email" placeholder="Email" required>
           </div>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <button type="submit">SUBMIT</button>
         </form>
 
