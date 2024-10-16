@@ -1307,15 +1307,27 @@ li{
   justify-content: center;
 }
 
+.sign-up-section h2{
+  color: #42b84c;
+  text-align: center;
+}
+
 .sign-up-section form{
   margin: 0;
   padding: 64px 0;
+  width: none;
+}
+
+.sign-up-section #input-text{
+  width: 221px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sign-up-section ul{
   list-style-type: none;
-  padding-left: 12px;
-  margin-top: -22.5px;
+  padding-left: 219px;
+  margin-top: 0px;
 }
 
 .sign-up-section li{
@@ -1326,6 +1338,22 @@ li{
 .sign-up-section li input{
   margin: 0;
   margin-right: 5px;
+}
+
+.submit-button{
+  width: 221px;
+  margin: auto;
+}
+
+.submit-button button{
+  width: 221px;
+}
+
+@media screen and (max-width: 660px){
+.sign-up-section ul{
+  padding-left: calc(50vw - 110px);
+  margin-right: 5vw;
+}
 }
 
 /* #endregion OPLEIDING PAGECONTAINER END */
@@ -1365,6 +1393,11 @@ li{
 
 .privacy-page a{
   font-family: poppins;
+}
+
+.privacy-page h3{
+  width: 80%;
+  margin: auto;
 }
 
 .privacy-page h3 a{
@@ -1517,7 +1550,7 @@ input:focus{
   transform: scale(1.1);
 }
 
-form{
+.email-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
