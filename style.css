@@ -83,12 +83,14 @@
 
 .hero-section{
   background-color: #1a1a1a;
-  border-bottom: 2px #1a1a1a solid;
 }
 
 .opleiding-section{
   background-image: linear-gradient(#262626, #333333);
   border-bottom: #1a1a1a 2px solid;
+}
+.opleiding-section.index{
+  border-bottom: 0;
 }
 .color-a .opleiding-section{
   border-bottom: #1a1a1a 2px solid;
@@ -117,10 +119,6 @@
   text-shadow: 0 0 2.5px #ffffff;
 }
 
-.cta-section{
-  background-image: linear-gradient(#262626, #333333);
-  background-color: #262626;
-}
 /* #endregion */
 
 /* #region OPLEIDING CONTAINER SECTION */
@@ -264,12 +262,14 @@
 
 .hero-section{
   background-color: #ffffff;
-  border-bottom: 2px #cccccc solid;
 }
 
 .opleiding-section{
   background-image: linear-gradient(#e6e6e6, #ffffff);
   border-bottom: #cccccc  2px solid;
+}
+.opleiding-section.index{
+  border-bottom:  0;
 }
 .color-a .opleiding-section{
   border-bottom: #cccccc  2px solid;
@@ -300,10 +300,6 @@
   text-shadow: 0 0 2.5px #1a1a1a;
 }
 
-.cta-section{
-  background-image: linear-gradient(#e6e6e6, #ffffff);
-  background-color: #e6e6e6;
-}
 /* #endregion */
 
 /* #region OPLEIDING CONTAINER SECTION */
@@ -397,21 +393,34 @@ body{
 
 h1{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 60px;
 }
 h2{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 50px;
 }
 h3{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 40px;
 }
 h4{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 30px;
 }
+
 h5{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 30px;
 }
 h6{
   font-family: dm-sans;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 p{
@@ -520,7 +529,6 @@ li{
 
 /* #region HEADER SECTION */
 .header{
-  height: auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -760,6 +768,38 @@ li{
   justify-content: space-evenly;
 }
 
+.hero-section-new{
+  display: flex;
+  position: relative;
+}
+
+.hero-section-text{
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  width: 50%;
+}
+
+.hero-section-text ul{
+ margin: auto;
+ padding: 0;
+ list-style-type: none;
+ width: fit-content;
+}
+
+.hero-section-text li{
+  margin: 10px 0;
+  width: fit-content;
+  padding: 0 10px;
+}
+
+.hero-section-text h3{
+  background-color: #5dc1e8;
+  margin: 0;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
 .hero-section-content{
   width: 100%;
   margin: auto;
@@ -781,7 +821,7 @@ li{
   margin-bottom: 16px;
   font-size: 20px;
   font-family: poppins;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .horizongeodesie{
@@ -834,7 +874,7 @@ li{
 
 .img-style{
   width: 100%;
-  height: 700px;
+  height: 33vw;
   background-size: cover;
   background-position: center center;
   display: block;
@@ -843,7 +883,7 @@ li{
 }
 
 .img-1-slideshow{
-  background-image: url('images/new-images/totalstation.png');
+  background-image: url('images/new-images/totalstation-2.png');
 }
 .img-2-slideshow{
   background-image: url('images/new-images/waterpassen.jpg');
@@ -871,8 +911,42 @@ li{
   to {opacity: 1}
 }
 
+@media screen and (max-width: 768px){
+ /* .hero-section-text h3{
+    line-height: 5.21vw;
+    font-size: 2.44vw;
+    margin: 1.3vw 0;
+    padding: 0 1.3vw;
+  }*/
+
+  .hero-section-text{
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 623px){
+  .hero-section-text{
+    width: 66.667%;
+  }
+}
+@media screen and (max-width: 550.5px){
+  .hero-section-text{
+    width: 75%;
+  }
+
+  .hero-section-text h3{
+    line-height: 7.266vw;
+    font-size: 3.4vw;
+    margin: 1.817vw 0;
+    padding: 0 1.817vw;
+  }
+}
 
 @media screen and (max-width: 768px){
+
   .hero-section{
     flex-direction: column-reverse;
   }
@@ -900,7 +974,7 @@ li{
 .opleiding-section{
   display: flex;
   justify-content: space-evenly;
-  padding: 64px 0;
+  padding: 100px 0;
 }
 
 .img-opleiding{
@@ -954,6 +1028,10 @@ li{
   height: auto;
 }
 
+.opleiding-section .index{
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 768px){
   .opleiding-section{
     flex-direction: column;
@@ -987,10 +1065,11 @@ li{
 
 .diensten-section{
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .diensten-section h1{
-  padding-top: 64px;
+  padding-top: 100px;
   margin-top: 0;
   margin-bottom: 48px;
 }
@@ -1149,8 +1228,7 @@ li{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 64px;
-  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 /* for button style see hero section .cta button */
@@ -1189,6 +1267,10 @@ li{
 }
 .img-diensten-kadaster{
   background-image: url(images/new-images/waterpassen.jpg);
+}
+
+.opleiding-section.kadaster{
+  border-bottom: none !important;
 }
 
 @media screen and (max-width: 768px){
@@ -1231,6 +1313,10 @@ li{
   box-shadow: inset 0 0 100px #000000;
 }
 @media screen and (max-width: 768px){
+
+  iframe{
+    height: 66vw;
+  }
 
   .img-style-opleiding{
     height: 66vw;
@@ -1302,20 +1388,71 @@ li{
   padding-bottom: 8px;
 }
 
-.sign-up-section{
-  display: flex;
-  justify-content: center;
-}
-
 .sign-up-section h2{
   color: #42b84c;
   text-align: center;
 }
 
 .sign-up-section form{
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding: 64px 0;
+  padding: 0 0 64px 0;
   width: none;
+}
+
+.form-flex-1{
+  margin-top: 15px;
+  display: flex;
+  padding: 0 50px;
+  justify-content: end;
+  align-items: center;
+  width: 439.594px;
+}
+
+.divider{
+  border: 1px solid #1a1a1a;
+}
+
+.form-flex-2{
+  padding:  0 50px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1081px){
+  .sign-up-section form{
+    flex-direction: column;
+  }
+
+  .form-flex-1{
+    justify-content: center;
+    width: auto;
+  }
+  
+  .form-flex-2{
+    justify-content: center;
+  }
+
+  .sign-up-section ul{
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .submit-button-1{
+    display: none;
+  }
+  .submit-button-2{
+    display: block !important;
+    justify-self: center;
+  }
+
+  .divider{
+  border: 0px solid #1a1a1a;
+}
+}
+
+.submit-button-2{
+  display: none;
 }
 
 .sign-up-section #input-text{
@@ -1326,7 +1463,7 @@ li{
 
 .sign-up-section ul{
   list-style-type: none;
-  padding-left: 219px;
+  padding-left: 0px;
   margin-top: 0px;
 }
 
@@ -1340,6 +1477,14 @@ li{
   margin-right: 5px;
 }
 
+.sign-up-section h3{
+  width: 221px;
+}
+
+.verstuur-knop{
+  width: 221px;
+}
+
 .submit-button{
   width: 221px;
   margin: auto;
@@ -1349,19 +1494,35 @@ li{
   width: 221px;
 }
 
+/*
 @media screen and (max-width: 660px){
 .sign-up-section ul{
   padding-left: calc(50vw - 110px);
   margin-right: 5vw;
 }
 }
+*/
 
 /* #endregion OPLEIDING PAGECONTAINER END */
 
 /* #region CONTACT PAGE */
 
+iframe{
+  width: 100%;
+}
+
+.contact-hero{
+  border-bottom: none !important;
+}
+
+@media screen and (max-width: 768px){
+  .contact-hero{
+    flex-direction: column !important;
+  }
+}
+
 .contact-info ul{
-  font-size: 22px;
+  font-size: 17.72px;
   margin-top: -6.25px !important;
   list-style-type: none;
   padding-left: 0;
@@ -1376,6 +1537,7 @@ li{
   align-items: center;
   margin: 6.25px;
   margin-left: 0;
+  text-decoration: none;
 }
 
 .contact-info .info-icon{
@@ -1437,6 +1599,7 @@ li{
 /* #region FOOTER SECTION */
 .footer{
   height: auto;
+  padding-top: 25px;
 }
 .footer-flex{
   display: flex;
@@ -1447,7 +1610,7 @@ li{
 .footer-logo{
   height: auto;
   width: 530px;
-
+  padding: 25px;
 }
 @media screen and (max-width: 913px){
 
@@ -1458,14 +1621,9 @@ li{
   }
 }
 
-.logo-info{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .footer-info{
   width: fit-content;
+  padding: 50px;
 }
 
 .footer h3{
@@ -1474,8 +1632,11 @@ li{
 }
 
 .footer-info ul{
-  font-size: 20px;
-  margin-top: -12.5px !important;
+  font-size: 16px;
+}
+
+.footer-info a{
+  text-decoration: none;
 }
 
 @media screen and (max-width: 320px){
@@ -1495,16 +1656,22 @@ li{
 
 .social-media{
   text-align: center;
-  margin: 25px;
+  padding: 50px;
 }
 
 .volg-ons ul{
   margin: 25px !important;
+  margin-top: 0 !important;
+  padding: 0;
 }
 
 .volg-ons{
   display: flex;
   justify-content: space-evenly;
+}
+
+.social-media h4{
+  margin-top: 0;
 }
 
 .volg-ons button{
@@ -1520,8 +1687,8 @@ li{
 
 .footer-flex ul{
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  margin: 25px;
 }
 
 .input input{
@@ -1580,6 +1747,10 @@ form button:hover{
   transform: scale(1.1);
 }
 
+.footer-tab-links{
+  padding: 50px;
+}
+
 .footer-info ul li a{
   display: flex;
   align-items: center;
@@ -1594,7 +1765,8 @@ form button:hover{
 
 .copyright{
   text-align: center;
-  padding: 25px;
+  padding: 16px;
+  font-size: 15px;
   margin: 0;
 }
 
