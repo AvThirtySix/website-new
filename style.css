@@ -101,10 +101,13 @@
 
 .diensten-section{
   background-image: linear-gradient(#262626, #333333);
-  border-bottom: #1a1a1a 2px solid;
 }
 .card-text{
   background-image: linear-gradient(#1a1a1a, #262626);
+}
+
+.h4.opleiding1{
+  color: #ffffff;
 }
 
 
@@ -130,6 +133,10 @@
 
 .opleiding-subjects-section details {
   box-shadow: 0px 2px #1a1a1a;
+}
+
+.divider{
+  border: 1px solid #ffffff;
 }
 
 .sign-up-section{
@@ -280,13 +287,16 @@
 
 .diensten-section{
   background-image: linear-gradient(#e6e6e6, #ffffff);
-  border-bottom: #cccccc  2px solid;
 }
 .card-text{
   background-image: linear-gradient(#ffffff, #e6e6e6);
 }
 .card{
   background-color: #cccccc;
+}
+
+.h4.opleiding1{
+  color: #1a1a1a;
 }
 
 .faq-section{
@@ -311,6 +321,10 @@
 
 .opleiding-subjects-section details {
   box-shadow: 0px 2px #cccccc;
+}
+
+.divider{
+  border: 1px solid #1a1a1a;
 }
 
 .sign-up-section{
@@ -428,7 +442,7 @@ p{
 }
 
 button{
-  font-family: tw-cen-mt;
+  font-family: dm-sans;
 }
 
 a{
@@ -453,6 +467,7 @@ li{
   display: flex;
   height: 12px;
 }
+
 .color-1{
   background-color:  #42b84c;
   height: 12px;
@@ -497,7 +512,11 @@ li{
   text-shadow: 0 0 2.5px #ababab;
 }
 .text-color-grey-nh{
-  color: #ababab;
+  color: #808080;
+}
+
+.no-shadow{
+  text-shadow: none !important;
 }
 
 .active-tab{
@@ -771,6 +790,7 @@ li{
 .hero-section-new{
   display: flex;
   position: relative;
+  box-shadow: 0px 25px 25px #000000;
 }
 
 .hero-section-text{
@@ -793,11 +813,25 @@ li{
   padding: 0 10px;
 }
 
+.hero-section-text li a{
+  text-decoration: none;
+}
+
 .hero-section-text h3{
-  background-color: #5dc1e8;
-  margin: 0;
+  font-family: dm-sans;
+  background-color: #808080;
+  color: #000000;
+  font-weight: 100;
   margin: 10px 0;
   padding: 0 10px;
+  font-size: 20px;
+  text-shadow: none;
+  transition: all .5s ease-in-out; 
+}
+
+.hero-section-text h3:hover{
+  transform: scale(1.1);
+  transition: .5s;
 }
 
 .hero-section-content{
@@ -816,7 +850,7 @@ li{
   margin-bottom: 20px;
   margin-top: 0;
 }
-.hero-section-content h4{
+.hero-section-content h3{
   max-width: 500px;
   margin-bottom: 16px;
   font-size: 20px;
@@ -830,26 +864,23 @@ li{
 }
 
 .cta button{
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   padding: 10.5px 12px;
   margin-top: 24px;
-  border-radius: 24px;
   max-width: 500px;
   text-decoration: none;
   border: none;
   transition: all .5s ease-in-out;
-  box-shadow: 0 0 10px 2px #1a1a1a;
-  text-shadow: 2px 2px 3px #000000;
 }
 
 .cta-opleiding{
-  background-color: #42b84c;
+  background-color: #808080;
 }
 
 .cta-contact{
-  color: #ffffff !important;
-  background-color: #5dc1e8;
+  color: #000000 !important;
+  background-color: #808080;
 }
 
 .cta button:hover{
@@ -927,6 +958,12 @@ li{
   }
 }
 
+@media screen and (max-width: 664px){
+  .hero-section-text{
+    width: 1%;
+  }
+}
+
 @media screen and (max-width: 623px){
   .hero-section-text{
     width: 66.667%;
@@ -992,7 +1029,7 @@ li{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  padding: 64px 0;
+  padding: 100px 0;
 }
 
 .opleiding-text-container{
@@ -1064,6 +1101,7 @@ li{
 /* #region HOME DIENSTEN SECTION */
 
 .diensten-section{
+  padding: 100px 0;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -1091,19 +1129,25 @@ li{
   }
 }
 
+@media screen and (max-width: 284px){
+  .diensten-cards a{
+    width: 100%;
+  }
+}
+
 .card{
   width: 284px;
   text-align: center;
   margin-bottom: 64px;
-  border-radius: 24px;
+  border-radius: px;
   box-shadow: 0 0 25px #000000;
   transition: all .5s ease-in-out; 
 }
 
 .card-text{
   padding-bottom: 25px;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: px;
+  border-bottom-right-radius: px;
 }
 
 .card:hover{
@@ -1112,8 +1156,8 @@ li{
 }
 
 .card img{
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: px;
+  border-top-right-radius: px;
 }
 
 .h4.landmeten1{
@@ -1130,7 +1174,13 @@ li{
 }
 
 .h4.kadaster1{
-  color: #ababab;
+  color: #808080;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 0;
+}
+
+.h4.opleiding1{
   text-align: center;
   padding: 15px 30px;
   margin: 0;
@@ -1144,15 +1194,15 @@ li{
 }
 
 .img-diensten-container{
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: px;
+  border-top-right-radius: px;
   width: 284px;
   height: 189.3px;
 }
 
 .img-card{
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: px;
+  border-top-right-radius: px;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -1168,6 +1218,9 @@ li{
   background-image: url('images/new-images/spiegeltje-potlood-en-haak.png');
 }
 .img-diensten-cards-3{
+  background-image: url('images/new-images/TSC5.jpg');
+}
+.img-diensten-cards-4{
   background-image: url('images/new-images/waterpassen.jpg');
 }
 
@@ -1228,7 +1281,6 @@ li{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 100px;
 }
 
 /* for button style see hero section .cta button */
@@ -1246,7 +1298,6 @@ li{
   background-position: center center;
   display: block;
   margin: auto;
-  box-shadow: inset 0 0 100px #000000;
 }
 
 .img-diensten-style{
@@ -1256,7 +1307,7 @@ li{
   background-position: center center;
   display: block;
   margin: auto;
-  box-shadow: inset 0 0 100px #000000;
+  box-shadow: 0 0 50px #000000;
 }
 
 .img-diensten-landmeten{
@@ -1271,6 +1322,11 @@ li{
 
 .opleiding-section.kadaster{
   border-bottom: none !important;
+}
+
+.cta-section-diensten-page{
+  padding-bottom: 100px;
+  margin-top: -50px;
 }
 
 @media screen and (max-width: 768px){
@@ -1328,13 +1384,13 @@ li{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+  padding: 100px 0;
 }
 
 .opleiding-subjects-section h1{
   color: #42b84c;
   text-align: center;
-  padding-top: 64px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin-top: 0;
   width: 80%;
 }
@@ -1357,11 +1413,14 @@ li{
   font-size: 18px;
 }
 
+.opleiding-subjects-h4{
+  font-family: poppins !important;
+}
+
 .opleiding-subjects-section .accordion {
 	max-width: 800px;
 	width: 80%;
-  margin-bottom: 64px;
-  margin-top: 32px;
+margin: 0;
 }
 .opleiding-subjects-section details {
 	background-color: transparent;
@@ -1388,16 +1447,30 @@ li{
   padding-bottom: 8px;
 }
 
-.sign-up-section h2{
+.sign-up-section{
+  padding: 100px 0;
+}
+
+.sign-up-section-h2{
   color: #42b84c;
   text-align: center;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.form-flex h2{
+  color: #42b84c;
+  text-align: start;
+  padding: 0 50px;
+  display: none;
 }
 
 .sign-up-section form{
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0 0 64px 0;
+  padding: 0 0 0 0;
   width: none;
 }
 
@@ -1406,12 +1479,11 @@ li{
   display: flex;
   padding: 0 50px;
   justify-content: end;
-  align-items: center;
-  width: 439.594px;
+  width: 347.953px;
 }
 
-.divider{
-  border: 1px solid #1a1a1a;
+.form-flex{
+  display: flex;
 }
 
 .form-flex-2{
@@ -1424,18 +1496,28 @@ li{
     flex-direction: column;
   }
 
-  .form-flex-1{
-    justify-content: center;
-    width: auto;
+  .form-flex h2{
+    text-align: start;
+    padding: 0 50px;
+    display: inline-block;
   }
-  
-  .form-flex-2{
-    justify-content: center;
+
+  .sign-up-section-h2{
+    display: none;
+  }
+
+  .form-flex{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-flex-1{
+    width: auto;
+    justify-content: start !important;
   }
 
   .sign-up-section ul{
     width: fit-content;
-    margin: 0 auto;
   }
 
   .submit-button-1{
@@ -1443,7 +1525,7 @@ li{
   }
   .submit-button-2{
     display: block !important;
-    justify-self: center;
+    margin-top: 32px;
   }
 
   .divider{
@@ -1641,8 +1723,10 @@ iframe{
 
 @media screen and (max-width: 320px){
 .footer-info ul{
-  font-size: 6.25vw;
   margin: 0 !important;
+}
+.footer-info{
+  padding: 50px 0;
 }
 }
 
@@ -1694,7 +1778,7 @@ iframe{
 .input input{
   padding: 7px 12px;
   width: 197px;
-  border-radius: 16px;
+  border-radius: ;
   font-size: 16px;
   outline: none;
   transition: all .5s ease-in-out; 
@@ -1727,20 +1811,18 @@ input:focus{
 }
 
 #input-text{
-  border-radius: 16px;
   margin-bottom: 25px;
   box-shadow: 0 0 5px #000000;
 }
 
 form button{
-  background-color: #42b84c;
+  background-color: #808080;
+  color: #000000;
   font-size: 16px;
   padding: 7.5px 8px;
-  border-radius: 16px;
+  border-radius: px;
   border: none;
   transition: all .5s ease-in-out; 
-  text-shadow: 2px 2px 3px #000000;
-  box-shadow: 0 0 10px 2px #000000;
 }
 
 form button:hover{
