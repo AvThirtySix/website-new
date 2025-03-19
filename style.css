@@ -110,6 +110,9 @@
   color: #ffffff;
 }
 
+.opleiding-card:hover{
+  box-shadow: 0 0 25px #ffffff;
+}
 
 .faq-section{
   background-image: linear-gradient(#262626, #333333);
@@ -297,6 +300,10 @@
 
 .h4.opleiding1{
   color: #1a1a1a;
+}
+
+.opleiding-card:hover{
+  box-shadow: 0 0 25px #000000;
 }
 
 .faq-section{
@@ -914,14 +921,27 @@ li{
 }
 
 .img-1-slideshow{
-  background-image: url('images/new-images/totalstation-2.png');
+  background-image: url('images/new-images/totalstation.png');
 }
 .img-2-slideshow{
-  background-image: url('images/new-images/waterpassen.jpg');
+  background-image: url('images/new-images/gps-ontvanger-close-up.png');
 }
 .img-3-slideshow{
-  background-image: url('images/new-images/spiegeltje-en-tsc5.png');
+  background-image: url('images/new-images/spiegeltje-potlood-en-haak.png');
 }
+.img-4-slideshow{
+  background-image: url('images/new-images/TSC5.jpg');
+}
+.img-5-slideshow{
+  background-image: url('images/new-images/veldwerk-kadaster.png');
+}
+.img-6-slideshow{
+  background-image: url('images/new-images/waterpassen.jpg');
+}
+.img-7-slideshow{
+  background-image: url('images/new-images/totalstation-2.png');
+}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -1163,9 +1183,6 @@ li{
 .kadaster-card:hover{
   box-shadow: 0 0 25px #ababab;
 }
-.opleiding-card:hover{
-  box-shadow: 0 0 25px #000000;
-}
 
 .card img{
   border-top-left-radius: px;
@@ -1224,16 +1241,16 @@ li{
 }
 
 .img-diensten-cards-1{
-  background-image: url('images/new-images/totalstation.png');
+  background-image: url('images/new-images/gps-ontvanger-close-up.png');
 }
 .img-diensten-cards-2{
   background-image: url('images/new-images/spiegeltje-potlood-en-haak.png');
 }
 .img-diensten-cards-3{
-  background-image: url('images/new-images/TSC5.jpg');
+  background-image: url('images/new-images/waterpassen.jpg');
 }
 .img-diensten-cards-4{
-  background-image: url('images/new-images/VW_AMN00_C_467_1\ .png');
+  background-image: url('images/new-images/TSC5.jpg');
 }
 
 /* #endregion */
@@ -1323,13 +1340,13 @@ li{
 }
 
 .img-diensten-landmeten{
-  background-image: url(images/new-images/totalstation.png);
+  background-image: url(images/new-images/gps-ontvanger-close-up.png);
 }
 .img-diensten-maatvoering{
   background-image: url(images/new-images/spiegeltje-potlood-en-haak.png);
 }
 .img-diensten-kadaster{
-  background-image: url(images/new-images/waterpassen.jpg);
+  background-image: url(images/new-images/veldwerk-kadaster.png);
 }
 
 .opleiding-section.kadaster{
