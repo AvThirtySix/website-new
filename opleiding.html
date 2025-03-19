@@ -191,6 +191,7 @@
                     <li>Meten met GPS</li>
                     <li>Meten met Total Station</li>
                     <li>Waterpassen analoog/digitaal</li>
+                  </ul>
                   <br><br>
                   <h4 class="opleiding-subjects-h4">Vereiste voorkennis</h4>
                   <ul>
@@ -365,7 +366,7 @@
       <div class="color-a" id="aanmelden-opleiding">
         <div class="sign-up-section">
           <h2 class="sign-up-section-h2">Aanmelding</h2>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
             <div class="form-flex">
               <h2>Aanmelding</h2>
             <div class="form-flex-1">
@@ -383,6 +384,7 @@
                   <p>Kosten: € 525 per dag<br>
                       Locatie: in overleg<br></p>
                   <p>Een opleiding wordt<br> gegeven bij minimaal<br> 3 deelnemers</p>
+                  <p id="errorMessage"></p>
               </div>
               </div>
             </div>
@@ -391,7 +393,7 @@
               <ul>
                 <li>
                   <div>
-                    <input type="checkbox" name="Basis-landmeetkunde-2-dagen" id="Basis-landmeetkunde-2-dagen" value="Basis-landmeetkunde-2-dagen">
+                    <input type="checkbox" name="opleiding" id="Basis-landmeetkunde-2-dagen" value="Basis-landmeetkunde-2-dagen">
                   </div>
                   <div>
                     <label for="Basis-landmeetkunde-2-dagen"> Basis Landmeten, 1 dag</label>
@@ -399,7 +401,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Meten-met-GNSS-1-dag" id="Meten-met-GNSS-1-dag" value="Meten-met-GNSS-1-dag">
+                    <input type="checkbox" name="opleiding" id="Meten-met-GNSS-1-dag" value="Meten-met-GNSS-1-dag">
                   </div>
                   <div>
                     <label for="Meten-met-GNSS-1-dag"> Meten met GPS, 1 dag</label>
@@ -407,7 +409,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Meten-met-Total-Station-2-dagen" id="Meten-met-Total-Station-2-dagen" value="Meten-met-Total-Station-2-dagen">
+                    <input type="checkbox" name="opleiding" id="Meten-met-Total-Station-2-dagen" value="Meten-met-Total-Station-2-dagen">
                   </div>
                   <div>
                     <label for="Meten-met-Total-Station-2-dagen"> Meten met Total Station, 2 dagen</label>
@@ -415,7 +417,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Waterpassen-analoog/digitaal-1-dag" id="Waterpassen-analoog/digitaal-1-dag" value="Waterpassen-analoog/digitaal-1-dag">
+                    <input type="checkbox" name="opleiding" id="Waterpassen-analoog/digitaal-1-dag" value="Waterpassen-analoog/digitaal-1-dag">
                   </div>
                   <div>
                     <label for="Waterpassen-analoog/digitaal-1-dag"> Waterpassen analoog/digitaal, 1 dag</label>
@@ -423,15 +425,15 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="xxx" id="xxx" value="xxx">
+                    <input type="checkbox" name="opleiding" id="Traject-Landmeten-5-dagen" value="Traject-Landmeten-5-dagen">
                   </div>
                   <div>
-                    <label for="xxx"> Traject Landmeten, 5 dagen</label>
+                    <label for="Traject-Landmeten-5-dagen"> Traject Landmeten, 5 dagen</label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Maatvoering-Wegenbouw-2-dagen" id="Maatvoering-Wegenbouw-2-dagen" value="Maatvoering-Wegenbouw-2-dagen">
+                    <input type="checkbox" name="opleiding" id="Maatvoering-Wegenbouw-2-dagen" value="Maatvoering-Wegenbouw-2-dagen">
                   </div>
                   <div>
                     <label for="Maatvoering-Wegenbouw-2-dagen"> Maatvoering Wegenbouw, 2 dagen</label>
@@ -439,7 +441,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Maatvoering-Bouw-2-dagen" id="Maatvoering-Bouw-2-dagen" value="Maatvoering-Bouw-2-dagen">
+                    <input type="checkbox" name="opleiding" id="Maatvoering-Bouw-2-dagen" value="Maatvoering-Bouw-2-dagen">
                   </div>
                   <div>
                     <label for="Maatvoering-Bouw-2-dagen"> Maatvoering Bouw, 2 dagen</label>
@@ -447,7 +449,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Werkvoorbereiding-1-dag" id="Werkvoorbereiding-1-dag" value="Werkvoorbereiding-1-dag">
+                    <input type="checkbox" name="opleiding" id="Werkvoorbereiding-1-dag" value="Werkvoorbereiding-1-dag">
                   </div>
                   <div>
                     <label for="Werkvoorbereiding-1-dag"> Werkvoorbereiding, 1 dag</label>
@@ -455,7 +457,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="HTW-conform-meten-en-1ste-faseverwerking-2-dagen" id="HTW-conform-meten-en-1ste-faseverwerking-2-dagen" value="HTW-conform-meten-en-1ste-faseverwerking-2-dagen">
+                    <input type="checkbox" name="opleiding" id="HTW-conform-meten-en-1ste-faseverwerking-2-dagen" value="HTW-conform-meten-en-1ste-faseverwerking-2-dagen">
                   </div>
                   <div>
                     <label for="HTW-conform-meten-en-1ste-faseverwerking-2-dagen"> Kadastraal meten conform HTW, 2 dagen</label>
@@ -463,7 +465,7 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="Kadastrale-reconstructie-2-dagen" id="Kadastrale-reconstructie-2-dagen" value="Kadastrale-reconstructie-2-dagen">
+                    <input type="checkbox" name="opleiding" id="Kadastrale-reconstructie-2-dagen" value="Kadastrale-reconstructie-2-dagen">
                   </div>
                   <div>
                     <label for="Kadastrale-reconstructie-2-dagen"> Kadastrale reconstructie, 2 dagen</label>
@@ -471,26 +473,26 @@
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="" id="" value="">
+                    <input type="checkbox" name="opleiding" id="Deformatiemeting-1D" value="Deformatiemeting-1D">
                   </div>
                   <div>
-                    <label for=""> Deformatiemeting 1D </label>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <input type="checkbox" name="" id="" value="">
-                  </div>
-                  <div>
-                    <label for=""> Deformatiemeting 3D</label>
+                    <label for="Deformatiemeting-1D"> Deformatiemeting 1D </label>
                   </div>
                 </li>
                 <li>
                   <div>
-                    <input type="checkbox" name="" id="" value="">
+                    <input type="checkbox" name="opleiding" id="Deformatiemeting-3D" value="Deformatiemeting-3D">
                   </div>
                   <div>
-                    <label for=""> Traject op maat</label>
+                    <label for="Deformatiemeting-3D"> Deformatiemeting 3D</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input type="checkbox" name="opleiding" id="Traject-op-maat" value="Traject-op-maat">
+                  </div>
+                  <div>
+                    <label for="Traject-op-maat"> Traject op maat</label>
                   </div>
                 </li>
               </ul>
@@ -499,6 +501,7 @@
                 <p>Kosten: € 525 per dag<br>
                   Locatie: in overleg<br></p>
               <p>Een opleiding wordt<br> gegeven bij minimaal<br> 3 deelnemers</p>
+              <p id="errorMessage2"></p>
               </div>
             </div>
           </div>

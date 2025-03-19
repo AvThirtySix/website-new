@@ -25,35 +25,31 @@ function showSlides() {
 }
 
 /* form script */
-function emailSend(){
+function validateForm() {
+  const checkboxes = document.getElementsByName('opleiding');
+  let checked = false;
 
-
-	let userName = document.getElementById('name').value;
-	let phone = document.getElementById('phone').value;
-	let email = document.getElementById('email').value;
-
-
-	let messageBody = "Name " + userName +
-	"<br/> Phone " + phone +
-	"<br/> Email " + email;
-	Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "host@gmail.com",
-    Password : "Password",
-    To : 'reviever@gmail.com',
-    From : "website@gmail.com",
-    Subject : "This is the subject",
-    Body : messageBody
-}).then(
-  message => {
-  	if(message=='OK'){
-  		swal("Secussful", "You clicked the button!", "success");
-  	}
-  	else{
-  		swal("Error", "You clicked the button!", "error");
-  	}
+  // Controleer of er minstens één checkbox is geselecteerd
+  for (let checkbox of checkboxes) {
+      if (checkbox.checked) {
+          checked = true;
+          break;
+      }
   }
-);
+
+  // Bepaal welke foutmelding zichtbaar moet zijn
+  const errorMessage = window.innerWidth <= 1081 
+      ? document.getElementById('errorMessage2') 
+      : document.getElementById('errorMessage');
+
+  if (!checked) {
+      errorMessage.innerText = 'Selecteer minimaal één opleiding om verder te gaan.';
+      return false; // Formulier wordt niet verzonden
+  } else {
+      errorMessage.innerText = ''; // Foutmelding wissen
+  }
+
+  return true; // Formulier wordt verzonden
 }
 
 /* google maps script */

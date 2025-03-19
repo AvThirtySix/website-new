@@ -512,7 +512,7 @@ li{
   text-shadow: 0 0 2.5px #ababab;
 }
 .text-color-grey-nh{
-  color: #808080;
+  color: #ababab;
 }
 
 .no-shadow{
@@ -639,7 +639,7 @@ li{
   color: #5dc1e8;
 }
 
- @media screen and (max-width: 913px){
+ @media screen and (max-width: 946px){
   .tab{
     margin-bottom: 25px;
     margin-top: -16px;
@@ -751,7 +751,7 @@ li{
 
   .tab.responsive{
     margin: 0;
-    margin-top: -1px;
+    margin-top: -4px;
     width: 134px;
     padding: 0 0 6.25px;
     height: 220px;
@@ -760,7 +760,7 @@ li{
   .tab{
     align-self: flex-end;
     width: auto;
-    margin-top: -1px;
+    margin-top: -4px;
     padding: 0;
   }
 
@@ -819,7 +819,7 @@ li{
 
 .hero-section-text h3{
   font-family: dm-sans;
-  background-color: #808080;
+  background-color: #ababab;
   color: #000000;
   font-weight: 100;
   margin: 10px 0;
@@ -875,12 +875,12 @@ li{
 }
 
 .cta-opleiding{
-  background-color: #808080;
+  background-color: #ababab;
 }
 
 .cta-contact{
   color: #000000 !important;
-  background-color: #808080;
+  background-color: #ababab
 }
 
 .cta button:hover{
@@ -1151,8 +1151,20 @@ li{
 }
 
 .card:hover{
-  box-shadow: 0 0 25px #5dc1e8;
   transform: scale(1.1); 
+}
+
+.landmeten-card:hover{
+  box-shadow: 0 0 25px #42b84c;
+}
+.maatvoering-card:hover{
+  box-shadow: 0 0 25px #5dc1e8;
+}
+.kadaster-card:hover{
+  box-shadow: 0 0 25px #ababab;
+}
+.opleiding-card:hover{
+  box-shadow: 0 0 25px #000000;
 }
 
 .card img{
@@ -1174,7 +1186,7 @@ li{
 }
 
 .h4.kadaster1{
-  color: #808080;
+  color: #ababab;
   text-align: center;
   padding: 15px 30px;
   margin: 0;
@@ -1221,7 +1233,7 @@ li{
   background-image: url('images/new-images/TSC5.jpg');
 }
 .img-diensten-cards-4{
-  background-image: url('images/new-images/waterpassen.jpg');
+  background-image: url('images/new-images/VW_AMN00_C_467_1\ .png');
 }
 
 /* #endregion */
@@ -1577,6 +1589,18 @@ margin: 0;
   width: 221px;
 }
 
+#errorMessage{
+  width: 221px;
+  height: 75px;
+  color: #ff0000;
+}
+
+#errorMessage2{
+  width: 221px;
+  height: 75px;
+  color: #ff0000;
+}
+
 /*
 @media screen and (max-width: 660px){
 .sign-up-section ul{
@@ -1779,7 +1803,6 @@ iframe{
 .input input{
   padding: 7px 12px;
   width: 197px;
-  border-radius: ;
   font-size: 16px;
   outline: none;
   transition: all .5s ease-in-out; 
@@ -1817,7 +1840,7 @@ input:focus{
 }
 
 form button{
-  background-color: #808080;
+  background-color: #ababab;
   color: #000000;
   font-size: 16px;
   padding: 7.5px 8px;
